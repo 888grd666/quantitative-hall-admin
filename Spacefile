@@ -1,0 +1,18 @@
+icon: ./app.py
+name: quantitative-hall-admin
+description: 管理员客服后台
+template: python
+
+run:
+  main: main.py
+  port: 8501
+
+env:
+  - key: STREAMLIT_SERVER_PORT
+    value: 8501
+  - key: STREAMLIT_SERVER_HEADLESS
+    value: true
+  - key: STREAMLIT_SERVER_ENABLE_CORS
+    value: false
+  - key: STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION
+    value: false
